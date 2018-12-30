@@ -8,8 +8,11 @@
     <title>Flexbox</title>
     <style>
         .father {
-            display: flex;
-            justify-content: space-around;
+            display: flex; 
+            flex-direction: column; /* 수직정렬 */
+            justify-content: center; /* 수직정렬일 때에 축이 변경됨 */
+            align-items: flex-end; /* 아이템 정렬 */
+            height: 100vh;
         }
 
         .box {

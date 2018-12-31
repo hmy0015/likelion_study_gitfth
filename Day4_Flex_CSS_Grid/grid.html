@@ -9,9 +9,9 @@
     <style>
         .father {
             display: grid;
-            grid-auto-rows: 200px;
-            grid-gap: 5px;
-            grid-template-columns: repeat(4, 1fr); /* 같은 크기의 셀을 반복적으로 4개 생성 */ 
+            grid-gap: 10px;
+            /* 가질 수 있는 가장 적은 공간을 할당 */
+            grid-template-columns: min-content repeat(3, 1fr);
         }
         .first {
             background-color: #f1c40f;
@@ -31,15 +31,12 @@
 <body>
 
     <div class="father">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident mollitia saepe incidunt! Neque
+                ea quam voluptate quidem cupiditate, earum doloribus perspiciatis quisquam quas sapiente accusantium labore architecto
+                quis, obcaecati perferendis.</div>
+            <div class="second"></div>
+            <div class="third"></div>
+            <div class="fourth"></div>
     </div>
 
 </body>

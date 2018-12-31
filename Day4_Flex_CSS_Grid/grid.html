@@ -11,17 +11,24 @@
             display: grid;
             grid-gap: 10px;
             grid-auto-rows: 100px;
-            grid-template-columns: repeat(5, 100px);
+            grid-template-columns: repeat(5, 1fr);
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-            /* place-items는 place-content와 달리 box 안에 있는 content를 움직이는 방법 */
-            place-items: end center;
-            height: 100vh;
         }
         .box:nth-child(even) {
             background-color: #3498db;
         }
         .box:nth-child(odd) {
             background-color: #34495e;
+        }
+        .box:first-child {
+            /* line을 기준으로 column 병합 */
+            grid-column-start: 1;
+            grid-column-end: 5;
         }
     </style>
 </head>

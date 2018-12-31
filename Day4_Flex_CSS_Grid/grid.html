@@ -13,10 +13,8 @@
             grid-auto-rows: 100px;
             grid-template-columns: repeat(5, 100px);
             color: white;
-            /* place-content는 justify-content와 align-content를 한 번에 실행한 것
-               justify-content는 모든 column을 통째로 옮기는 것 – grid 자체를 움직이는 것 (가로)
-               align-content는 모든 box가 포함되어 있는 grid container를 이동하는 것임 (세로)  */
-            place-content: center;
+            /* place-items는 place-content와 달리 box 안에 있는 content를 움직이는 방법 */
+            place-items: end center;
             height: 100vh;
         }
         .box:nth-child(even) {
